@@ -1,16 +1,65 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
 
 /* universal selector */
 * {
     box-sizing: border-box;
 }
+
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Muli', sans-serif;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
     justify-content: center; /* centered column-wise, based on total height of body */
     height: 100vh; /* total height of body */
     overflow: hidden; /* prevent scroll bars to be shown by default */
     margin: 0;
+}
+
+.container {
+    display: flex;
+    width: 90vw;
+}
+
+.panel {
+    background-size: auto 100%; /* to preserve round corners on large screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    color: white; /* #fff */
+    cursor: pointer; /* finger-pointer cursor on hover */
+    flex: 0.5; /* width property as flex (since body display: flex box) */
+    margin: 10px;
+    position: relative; /* because related child elements (h3.panel) will be positioned absolute */
+    transition: flex 0.7s ease-in; /* flex-ease-in effect in 0.7s duration, for transition animation on event change */
+}
+
+.panel h3 {
+    font-size: 24px;
+    position: absolute; /* absolute positioning, within relative position of outer div.panel */
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+}
+
+.panel.active {
+    flex: 5;
+}
+
+.panel.active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s; /* opacity-ease-in effect in 0.3s duration, with 0.4s delay */
+}
+
+@media (max-width: 480px) { /* styles only for screen < 480px */
+    .container {
+        width: 100vw;
+    }
+
+    .panel:nth-of-type(4), 
+    .panel:nth-of-type(5) {
+        display: none;
+    }
 }
