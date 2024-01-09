@@ -1,3 +1,10 @@
+/*
+
+- vanilla.js / jquery.js / framework(s) combos
+
+
+*/
+
 const panels = document.querySelectorAll('.panel')
 // console.log(panels)
 
