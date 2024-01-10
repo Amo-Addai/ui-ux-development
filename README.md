@@ -1,6 +1,6 @@
 
 
-# [Front-End Development - UI/UX Projects](#)
+# [UI/UX Development - Html/Css/Javascript Projects](#)
 
 
 Explore my GitHub Mono-Repo Hub of innovation with diverse front-end development and mini-projects in HTML, CSS, and Javascript specifically. 
@@ -11,5 +11,4 @@ It is a playground for dynamic UI/UX combinations which can be used within web a
 
 
 Here are a few snapshots of UI/UX styles built within the project:
-
 
