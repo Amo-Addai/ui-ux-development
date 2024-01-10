@@ -1,6 +1,6 @@
 /*
 
-- display (flex/grid/block/inline-block/..), units/metrics (#/%/px/rem/..), translate/transforms, media queries, pseudo-selectors, ...
+- display (flex/grid/block/inline-flex/inline-block/..), units/metrics (#/%/px/rem/..), translate/transforms, media queries, pseudo-selectors, ...
 
 */
 
@@ -19,6 +19,7 @@ body {
     justify-content: center; /* centered column-wise, based on total height of body */
     height: 100vh; /* total height of body */
     overflow: hidden; /* prevent scroll bars to be shown by default */
+    /* or, prevents children from 'overflowing' out of the body (or any of container element) */
     margin: 0;
 }
 
