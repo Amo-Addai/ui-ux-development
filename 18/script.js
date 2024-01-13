@@ -5,14 +5,14 @@ const rightBtn = document.getElementById('right')
 
 let activeSlide = 0
 
-rightBtn.addEventListener('click', _ => {
+rightBtn.addEventListener('click', () => {
     if (activeSlide == slides.length - 1) activeSlide = 0
     else activeSlide++
     setBackgroundToBody()
     setActiveSlide() 
 })
 
-leftBtn.addEventListener('click', _ => {
+leftBtn.addEventListener('click', () => {
     if (activeSlide == 0) activeSlide = slides.length - 1
     else activeSlide--
     setBackgroundToBody()

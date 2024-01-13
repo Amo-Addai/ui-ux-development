@@ -1,6 +1,11 @@
 /*
 
-- display (none/flex/grid/block/inline-flex/inline-block/..), units/metrics (#/%/px/rem/../auto), translate/transforms, media queries, pseudo-selectors, ...
+- position (relative/absolute/inherit/fixed/static/sticky/..)
+- display (none/flex/grid/block/inline-flex/inline-block/..)
+- units/metrics (#/%/px/rem/../auto)
+- translate/transforms
+- media queries
+- pseudo-selectors
 
 */
 

@@ -3,7 +3,7 @@ const counters = document.querySelectorAll('.counter')
 counters.forEach(c => {
     c.innerText = '0'
 
-    const updateCounter = _ => {
+    const updateCounter = () => {
         const c2 = +c.innerText
         const target = +c.getAttribute('data-target')
         const inc = target / 200

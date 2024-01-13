@@ -5,7 +5,7 @@ input.focus()
 input.addEventListener('keyup', (e) => {
     createTags(e.target.value)
     if (e.key === 'Enter') {
-        setTimeout(_ => {
+        setTimeout(() => {
             e.target.value = ''
         }, 10)
         randomSelect()
@@ -24,7 +24,7 @@ function createTags(value) {
 }
 
 function randomSelect() {
-    const pickRandomTag = _ => {
+    const pickRandomTag = () => {
         const ts = document.querySelectorAll('.tag')
         return ts[Math.floor(Math.random() * ts.length)]
     }
@@ -36,15 +36,15 @@ function randomSelect() {
     }
 
     const times = 30
-    const interval = setInterval(_ => {
+    const interval = setInterval(() => {
         const randTag = pickRandomTag()
         highlightTag(randTag)
-        setTimeout(_ => unhighlightTag(randTag), 100)
+        setTimeout(() => unhighlightTag(randTag), 100)
     }, 100)
 
-    setTimeout(_ => {
+    setTimeout(() => {
         clearInterval(interval)
-        setTimeout(_ => {
+        setTimeout(() => {
             const randTag = pickRandomTag()
             highlightTag(randTag)
         }, 100)

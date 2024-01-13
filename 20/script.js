@@ -14,5 +14,5 @@ buttons.forEach(b => b.addEventListener('click', function (e) {
     circle.style.top = yInside + 'px'
     circle.style.left = xInside + 'px'
     this.appendChild(circle) // this keyword only works with a regular function(), not an arrow => function
-    setTimeout(_ => circle.remove(), 500)
+    setTimeout(() => circle.remove(), 500)
 }))

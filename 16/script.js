@@ -6,7 +6,7 @@ const remained = document.getElementById('remained')
 
 updateBigCup()
 
-smallCups.forEach((c, i) => c.addEventListener('click', _ => highlightCups(i)))
+smallCups.forEach((c, i) => c.addEventListener('click', () => highlightCups(i)))
 
 function highlightCups(i) {
     if(smallCups[i].classList.contains('full') && 
