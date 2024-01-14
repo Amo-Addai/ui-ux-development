@@ -103,13 +103,11 @@ nav ul li i {
 nav ul li + li {
     margin-left: 15px;
     transform: translateX(-100%);
-
 }
 
 nav ul li + li + li {
     margin-left: 30px;
     transform: translateX(-200%);
-
 }
 
 .content img {
