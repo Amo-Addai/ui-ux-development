@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 10px;
+    font-family: 'Muli', sans-serif;
+    color: #fff;
+    background-color: #3b3b98;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+h2 {
+    margin: 10px 0 20px;
+    text-align: center;
+}
+
+.container {
+    width: 350px;
+    max-width: 100%;
+    padding: 20px;
+    background-color: #23235b;
+    box-shadow: 0px 2px 10px rgba(255, 255, 255, 0.2);
+}
+
+.result-container {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    padding: 12px 10px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.result-container #result {
+    max-width: calc(100% - 40px);
+    word-wrap: break-word;
+}
+
+.result-container .btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+}
+
+.btn {
+    padding: 8px 12px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #3b3b98;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-large {
+    width: 100%;
+    display: block;
+}
+
+.setting {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
