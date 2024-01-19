@@ -3,9 +3,7 @@
 # [UI/UX Development - Html/Css/Javascript Projects](#)
 
 
-Explore my GitHub Mono-Repo Hub of innovation with diverse front-end development and mini-projects in HTML, CSS, and Javascript specifically. 
-
-UI styles like ...
+Explore my GitHub Mono-Repo Hub of innovation with diverse front-end development and mini-projects in HTML, CSS, Javascript, and React specifically. 
 
 It is a playground for dynamic UI/UX combinations which can be used within web and mobile app development frameworks. 
 
