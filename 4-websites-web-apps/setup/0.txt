@@ -1,0 +1,23 @@
+npm init -y
+
+npm install -D tailwindcss
+
+npx tailwindcss init
+
+- Create all tailwindcss components (from input to output .css files)
+
+npx tailwindcss -i ./path/to/input.css -o ./path/to/public/output.css --watch
+
+
+
+---
+
+- Resources
+
+tailwinduikit.com
+play.tailwindcss.com - Playground
+
+
+----
+
+Designs, Plan, Long/Short - hand

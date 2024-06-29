@@ -1,0 +1,14 @@
+node_modules/
+.history/
+.vscode/
+.editorconfig
+.hintrc
+.DS_STORE
+.eslintrc.js
+.prettierrc
+.env.*
+.env
+.dockerignore
+.github
+.gitlab-ci.yml
+.gitattributes

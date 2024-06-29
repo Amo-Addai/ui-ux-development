@@ -1,0 +1,30 @@
+Tailwind
+
+*-x > *-x(px/%/em/rem) - eg- h-5 > h-[5px]
+1 rem = 4 px
+
+block
+container
+flex = -row by default
+flex-1 justify-center
+space-x-4
+w-11/12
+font-black
+font-semibold | font-thin
+focus:ring-2 focus:ring-offset-2 focus:ring-gray-800
+text-base leading-4
+gap-x-8
+border-l
+f-f-p
+inline-flex
+space-y-1
+hidden
+sm:class (sm/md/lg/..) - responsiveness
+justify-between - can be for 3+ elems - 'max-space' in-between
+capitalize - CamelCase
+underline
+inline
+min-h-screen / *
+max-w-none / *
+divide-y
+leading-7
