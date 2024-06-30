@@ -7,13 +7,14 @@ block
 container
 flex = -row by default
 flex-1 justify-center
+bg-cover bg-no-repeat
 space-x-4
 w-11/12
 font-black
 font-semibold | font-thin
 focus:ring-2 focus:ring-offset-2 focus:ring-gray-800
 text-base leading-4
-gap-x-8
+gap-x-8 / *
 border-l
 f-f-p
 inline-flex
@@ -22,9 +23,20 @@ hidden
 sm:class (sm/md/lg/..) - responsiveness
 justify-between - can be for 3+ elems - 'max-space' in-between
 capitalize - CamelCase
+uppercase / lowercase
 underline
 inline
-min-h-screen / *
-max-w-none / *
+min-h-screen / (w-)*
+max-w-none / (h-)*
 divide-y
 leading-7
+flex-shrink-0 / *
+tracking-tight
+bg-clip-text
+text-lgr
+text-base
+text-transparent
+font-semibold
+bg-gradient-to-(t/b/l/r) from-[color-XXX] to-[color-XXX] - eg. cyan-500
+leading-normal
+text-[color-XXX] - can be used to modify colors of svg elements (not (background) images)

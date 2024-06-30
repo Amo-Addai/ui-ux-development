@@ -1,40 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product Landing Page</title>
-</head>
-<body>
-    
-    <div class="relative flex min-h-screen flex-col justify-center overflow-hidden bg-gray-50 py-6 sm:py-12">
-        <img src="imgs/sample.png" alt="" class="absolute top-1/2 left-1/2 max-w-none -translate-x-1/2 -translate-y-1/2" width="1308">
-        <div class="absolute inset-0 bg-url--imgs-sample-png bg-center" mask-image=""></div>
-        <div class="relative bg-white px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto sm:max-w-lg sm:rounded-lg sm:px-10">
-            <div class="mx-auto max-w-md">
-                <img src="imgs/sample.png" alt="" class="h-6">
-                <div class="divide-y divide-gray-300/50">
-                    <div class="space-y-6 py-8 text-base leading-7 text-gray-600">
-                        <p>lorem10</p>
-                        <ul class="space-y-4">
-                            <li class="flex items-center">
-                                <svg></svg>
-                                <p class="ml-4"><code class="text-sm font-bold text-gray-900">tailwind.config.js</code> file</p>
-                            </li>
-                            <li class="flex items-center">
-                                <svg></svg>
-                                <p class="ml-4"><code class="text-sm font-bold text-gray-900">tailwind.config.js</code> file</p>
-                            </li>
-                            <li class="flex items-center">
-                                <svg></svg>
-                                <p class="ml-4"><code class="text-sm font-bold text-gray-900">tailwind.config.js</code> file</p>
-                            </li>
-                        </ul>
-                    </div>
+    <link rel="stylesheet" type="text/css" href="./dist/index.css">
+  </head>
+  <body>
+
+    <!-- header section -->
+
+    <nav class="bg-gray-800">
+      <div class="mx-auto max-w-7xl px-2">
+        <div class="flex h-16 items-center justify-between">
+          <div class="flex flex-shrink-0 items-center">
+            <img
+              class="block h-8 w-auto"
+              src="https://tailwindui.com/img/logos/mark.svg?color=cyan&shade=500"
+              alt="Logo"
+            />
+            <h1
+              class="text-white flex items-center justify-center px-2 text-2xl font-medium"
+            >
+              tailwindcss
+            </h1>
+          </div>
+          <div class="flex space-x-4">
+            <a
+              href="#"
+              class="bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
+              >Home</a
+            ><a
+              href="#"
+              class="bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
+              >Testimonial</a
+            ><a
+              href="#"
+              class="bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
+              >Price</a
+            ><a
+              href="#"
+              class="bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
+              >Projects</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- main section -->
+
+    <main class="bg-[url()] h-screen bg-cover bg-no-repeat">
+        <div class="relative px-8">
+            <div class="mx-auto max-w-3xl pt-48 pb-32">
+                <h1 class="text-4xl font-bold tracking-tight text-center bg-clip-text text-transparent bg-gradient-to-t from-cyan-500 to-cyan-300">
+                    Data to enrich your online business
+                </h1>
+                <p class="mt-6 text-lgr leading-8 text-gray-600 text-center">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur voluptatibus consequatur repellat illum, consectetur at placeat tempora atque sit, corporis expedita repudiandae voluptas dolorum eveniet vitae, quaerat doloribus ipsam perspiciatis voluptate temporibus assumenda totam distinctio asperiores esse. Deserunt officia, dignissimos eveniet accusamus eaque illo voluptate qui quas suscipit facere adipisci ipsam error ducimus fuga minus consectetur recusandae dicta commodi sunt repellendus! Nihil placeat accusantium hic, rem minima dignissimos quisquam illo debitis vero? Consequuntur exercitationem unde id nemo reiciendis natus modi possimus suscipit molestiae ut similique consectetur architecto, quidem cum, officiis dolorum porro deleniti corrupti. Quia non alias ullam veniam magni!
+                </p>
+                <div class="mt-8 flex gap-x-4 justify-center">
+                    <a href="#" class="inline-block rounded-lg bg-cyan-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-cyan-600">
+                        Learn more
+                    </a>
                 </div>
             </div>
         </div>
-    </div>
+    </main>
 
-</body>
+    <!-- footer -->
+
+    <footer class="text-center bg-gray-800 text-white">
+        <div class="px-6 pt-6">
+            <div className="flex justify-center mb-6">
+                <a href="#" type="button" class="rounded-full border-2 border-white text-white leading-normal focus:ring-0 focus:outline-none w-9 h-9 m-1 uppercase">
+                    <svg aria-hidden="true"
+                        focusable="false"
+                        data-prefix="fab"
+                        data-icon="facebook-f"
+                        class="w-2 h-full mx-auto"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 320 512"
+                    >
+                        <path
+                            fill="currentColor"
+                            d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+                        ></path>
+                    </svg>
+                </a>
+                <a href="#" type="button" class="rounded-full border-2 border-white text-white leading-normal focus:ring-0 focus:outline-none w-9 h-9 m-1 uppercase">
+                    <svg aria-hidden="true"
+                        focusable="false"
+                        data-prefix="fab"
+                        data-icon="twitter"
+                        class="w-3 h-full mx-auto"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                    >
+                        <path
+                            fill="currentColor"
+                            d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                        ></path>
+                    </svg>
+                </a>
+                <a href="#" type="button" class="rounded-full border-2 border-white text-white leading-normal focus:ring-0 focus:outline-none w-9 h-9 m-1 uppercase">
+                    <svg aria-hidden="true"
+                        focusable="false"
+                        data-prefix="fab"
+                        data-icon="google"
+                        class="w-3 h-full mx-auto"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 488 512"
+                    >
+                        <path
+                            fill="currentColor"
+                            d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"
+                        ></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="mx-auto mb-6 w-1/2">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, nihil fugiat ratione impedit quas, doloremque ducimus veniam, saepe quisquam odio eveniet? Qui sapiente, eligendi libero ducimus aspernatur nihil architecto quidem culpa, deleniti impedit veritatis atque ut saepe repudiandae, sit fugiat accusamus fuga incidunt sed. Officia minus vel quidem eaque magni quasi, id laboriosam aliquid deleniti iusto. Amet aspernatur perferendis reprehenderit, neque accusamus sapiente dignissimos accusantium error vero nostrum unde dolores nobis laudantium sequi sit laboriosam, iste voluptate pariatur praesentium. Nulla odit, assumenda doloremque in soluta corrupti nobis non quo ipsam aut laborum dolore aliquam sunt consectetur illum minus, ipsum debitis!
+            </p>
+        </div>
+        <div class="bg-gray-900 text-white p-4">
+            ©️ 2024 Copyright: <a href="#">Tailwind CSS</a>
+        </div>
+    </footer>
+
+  </body>
 </html>
