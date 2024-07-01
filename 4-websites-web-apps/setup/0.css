@@ -1,6 +1,9 @@
 Tailwind
 
-*-x > *-x(px/%/em/rem) - eg- h-5 > h-[5px]
+*-x > *-x(px/%/em/rem) - eg- h-5 shorthand of h-[5px] (not h-[50%])
+h-1/2 = h-0.5 = h-[50%]
+h-1 = h-[100%] = h-full
+h-10 (+) = h-[10px] (+) ? = ?
 1 rem = 4 px
 
 block
@@ -13,9 +16,12 @@ w-11/12
 font-black
 font-semibold | font-thin
 focus:ring-2 focus:ring-offset-2 focus:ring-gray-800
+active:[prop]
 text-base leading-4
+text-lgr
+text-base
 gap-x-8 / *
-border-l
+border-(t/b/l/r)
 f-f-p
 inline-flex
 space-y-1
@@ -33,10 +39,15 @@ leading-7
 flex-shrink-0 / *
 tracking-tight
 bg-clip-text
-text-lgr
-text-base
 text-transparent
 font-semibold
 bg-gradient-to-(t/b/l/r) from-[color-XXX] to-[color-XXX] - eg. cyan-500
 leading-normal
 text-[color-XXX] - can be used to modify colors of svg elements (not (background) images)
+form-control
+bg-clip-padding
+inline-block
+leading-tight
+inset-0 / *
+transition-all / *
+object-cover object-center

@@ -1,13 +1,24 @@
 npm init -y
 
+- Install & Setup Tailwind CSS
+
 npm install -D tailwindcss
 
 npx tailwindcss init
 
-- Create all tailwindcss components (from input to output .css files)
+- Create/Build all tailwindcss components (from input to output .css files)
 
 npx tailwindcss -i ./path/to/input.css -o ./path/to/public/output.css --watch
 
+--
+
+- Install & Setup Post CSS
+
+npm install -D postcss postcss-cli
+
+- Create/Build all postcss components (from input to output .css files)
+
+postcss ./path/to/input.css -o ./path/to/public/output.css
 
 
 
