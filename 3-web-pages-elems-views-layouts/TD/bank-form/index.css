@@ -1,0 +1,38 @@
+
+body {
+    background-color: aqua;
+}
+
+.application-form {
+    display: grid;
+    place-items: center
+}
+
+.title {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.form_name {
+    text-align: center;
+}
+
+.details {
+    text-align: right;
+}
+
+input {
+    margin-top: 10px;
+}
+
+label {
+    margin-top: 10px;
+}
+
+select {
+    margin-top: 10px;
+}
+
+.sign {
+    text-align: right;
+}
