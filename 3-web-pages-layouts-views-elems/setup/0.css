@@ -1,0 +1,104 @@
+
+
+Major Assertion - 30% - 100% - 200% - 500% Zoom Ins/Outs
+UI/UX should stay in position ; Only 'empty space' should increase / decrease in size
+
+
+CSS - NB: all Tailwind Equivalents
+
+display: flex-column on body tag - does not take up entire body (requires a child-div as container) // TODO: ..
+display: block;
+@media (min-width: 768px) - 
+box-sizing: border-box;
+font-family: Arial, Helvetica, sans-serif; 'Raleway', sans-serif; 
+font-weight: bold; 900;
+grid-template-rows/columns: repeat(auto-fit, minmax(250px, 1fr)); - repeat number of cols to auto-fit children (equal grids), with min-max (mobile-responsive) sizes
+    30% 40% 30%; (3 cols with %s) repeat(4, auto); (4 rows with content height) 
+    auto-fit / -fill / ...
+    minmax(250px, 1fr); - 250 pixels in 1 fraction
+grid-gap: 1rem; - twind gap
+grid-row/column: 2 / 3; - grid-row/col-start 2 to 3
+display: grid; align-items: center; == display: flex; flex-direction: column; justify-content: center;
+display: flex; justify-content: center; gap: 1em; == display: grid;
+
+
+
+
+
+Tailwind
+
+*-x > *-x(px/%/em/rem) - eg- h-5 shorthand of h-[5px] (not h-[50%])
+h-1/2 = h-0.5 = h-[50%]
+h-1 = h-[100%] = h-full
+h-10 (+) = h-[10px] (+) ? = ?
+1 rem = 4 px
+
+block
+container
+flex = -row by default
+flex-1 justify-center
+bg-cover bg-no-repeat
+space-x-4
+w-11/12
+font-black
+font-semibold | font-thin
+focus:ring-2 focus:ring-offset-2 focus:ring-gray-800
+active:[prop]
+text-base leading-4
+text-lgr
+text-base
+gap-x-8 / *
+border-(t/b/l/r)
+f-f-p
+inline-flex
+space-y-1
+hidden
+sm:class (sm/md/lg/..) - responsiveness
+justify-between - can be for 3+ elems - 'max-space' in-between
+capitalize - CamelCase
+uppercase / lowercase
+underline
+inline
+min-h-screen / (w-)*
+max-w-none / (h-)*
+divide-y
+leading-7
+flex-shrink-0 / *
+tracking-tight
+bg-clip-text
+text-transparent
+font-semibold
+bg-gradient-to-(t/b/l/r) from-[color-XXX] to-[color-XXX] - eg. cyan-500
+leading-normal
+text-[color-XXX] - can be used to modify colors of svg elements (not (background) images)
+form-control
+bg-clip-padding
+inline-block
+leading-tight
+inset-0 / *
+transition-all / *
+object-cover object-center
+divide-x / y
+font-extrabold
+font-light
+h/w-fit
+(drop-)shadow-lg shadow-white - define shadow, before color
+bg-gray-700/50 == bg-gray-700 opacity-50
+font-bold - not text-bold (font-weight; not text-weight)
+font - family/size/smoothing/style/weight/variant-numeric
+text - align/color/decoration/d-color/d-style/d-thickness/underline-offset/transform/overflow/wrap/indent
+
+
+
+
+
+Bootstrap
+
+container
+text-center
+table table-bordered table-dark
+thead-dark
+
+
+
+
