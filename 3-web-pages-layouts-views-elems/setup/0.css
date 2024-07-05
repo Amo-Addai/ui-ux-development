@@ -4,10 +4,20 @@ Major Assertion - 30% - 100% - 200% - 500% Zoom Ins/Outs
 UI/UX should stay in position ; Only 'empty space' should increase / decrease in size
 
 
-CSS - NB: all Tailwind Equivalents
+Design Principles
 
+- how to be consistent / combinatorial between size-values (auto / % / px / em / rem / inherit / full / screen / ... )
+- gaps vs margins / paddings
+- 
+
+
+CSS - NB: all Shorthand & Tailwind Equivalents
+
+cssprop: value !important; - override older css styles / in-built classes from design systems (eg. Bootstrap/Tailwind/..)
 display: flex-column on body tag - does not take up entire body (requires a child-div as container) // TODO: ..
-display: block;
+display: block; / inline; - conversions between - inline elems (a, span, button, FIND_OTHERS, ..) & block elems (div, FIND_OTHERS, ..) // TODO: NB: other attributes of block/inline/..
+- some inline elems cannot receive certain styles, so converting them to 'display: block' elems allows that
+float-left/right - 
 @media (min-width: 768px) - 
 box-sizing: border-box;
 font-family: Arial, Helvetica, sans-serif; 'Raleway', sans-serif; 
@@ -20,6 +30,14 @@ grid-gap: 1rem; - twind gap
 grid-row/column: 2 / 3; - grid-row/col-start 2 to 3
 display: grid; align-items: center; == display: flex; flex-direction: column; justify-content: center;
 display: flex; justify-content: center; gap: 1em; == display: grid;
+margin: 0 auto; - 
+flex: 0 0 calc(50% - 1rem); - Specifies the components of a flexible length: the flex grow factor and flex shrink factor, and the flex basis
+font-family: 'Libre Baskerville', serif; - 
+text-transform: uppercase; - / none/lowercase/capitalize/full-width/full-size-kana/
+box-shadow: 0 5px 10px white; - (twind - shadow)
+filter: drop-shadow(0 1px 1px rgb(0 0 0 / 0.05)); - (twind - drop-shadow)
+filter: blur(10px);
+transition: filter 0.3s ease;
 
 
 
@@ -33,10 +51,15 @@ h-1 = h-[100%] = h-full
 h-10 (+) = h-[10px] (+) ? = ?
 1 rem = 4 px
 
-block
 container
+block
+float
 flex = -row by default
 flex-1 justify-center
+flex-wrap - can be used grids (find grid equivalent)
+bg-black/white - or inherit/current/transparent - needs no alpha value eg. bg-red-500
+- all other colors need alpha values from 50, 100, 200, .. , 900, 950, w//out opacity - eg. bg-red-500/50 /[.5] 
+- *-50 (white/lightest) *-950 (black/darkest)
 bg-cover bg-no-repeat
 space-x-4
 w-11/12
@@ -95,6 +118,14 @@ text - align/color/decoration/d-color/d-style/d-thickness/underline-offset/trans
 Bootstrap
 
 container
+row/col-sm/md/lg-[1:12] - 
+justify-content-center
+text-center - align item center of container (works for all kinds of 'block' elements; if 'inline', convert to 'display: block' element 1st)
+form-control
+btn btn-primary - button class; blue button
+btn-block - button takes width-size of parent <form>
+
+
 text-center
 table table-bordered table-dark
 thead-dark
