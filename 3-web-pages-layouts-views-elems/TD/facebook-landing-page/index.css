@@ -31,14 +31,10 @@ a {
     margin-top: 150px;
 }
 
-
-/* TODO: overriding display nulls bstrap text-center class call on next 2 elems; find solution: */
-
 button.btn-success {
-    display: block !important; /* override bootstrap's in-built display for buttons */
-    margin-left: 80px;
+    display: block !important;
 }
 
 p.text-center {
-    display: block !important; /* override bootstrap's in-built display for buttons */
+    display: block !important;
 }
