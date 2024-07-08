@@ -17,9 +17,14 @@ It is a playground for dynamic UI/UX combinations which can be used within web a
 <br />
 
 
+<!--  
+
 ## Here are the links to some of the hosted websites and apps:
 
 <br />
 <br />
 
 * [Website](https://github.com/Amo-Addai/ui-ux-development)  ([code](https://github.com/Amo-Addai/ui-ux-development/path/to/directory))
+
+-->
+
