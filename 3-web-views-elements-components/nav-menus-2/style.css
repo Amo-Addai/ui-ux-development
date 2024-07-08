@@ -1,0 +1,258 @@
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin:0;
+    background: #ff9966;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff5e62, #ff9966);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff5e62, #ff9966); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'IBM Plex Serif', serif;
+}
+
+nav {
+    background-color: #3F51B5;
+}
+
+nav ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+
+nav ul li {
+    padding: 20px;
+}
+
+nav ul li:hover {
+    background-color: #1a2770;
+}
+
+nav ul a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+.container {
+    background-color: white;
+    min-height: calc(100vh - 20px);
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px 30px 0 30px;
+}
+
+.simple ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.simple ul li {
+    margin-bottom: .5rem;
+    text-align: center;
+}
+
+.simple ul li:last-of-type {
+    margin-bottom: 0;
+}
+
+.icons ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.icons ul li {
+    flex: 0 0 100%;
+    display: flex;
+}
+
+.icons ul li a {
+    display: flex;
+    flex: 0 0 100%;
+    justify-content: center;
+}
+
+.icons .icon {
+    flex: 0 0 3rem;
+    font-size: 2rem;
+}
+
+.icons .text span {
+    display: block;
+    font-size: .8rem;
+    margin-top: .5rem;
+}
+
+.dropdown ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown ul li {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown ul li ul {
+    display: none;
+}
+
+.dropdown ul li:hover ul {
+    display: block;
+    margin-top: 1rem;
+    background-color: #ff5e62;
+}
+
+.social-menu span {
+    display: none;
+}
+
+.social-menu ul {
+    display: flex;
+    flex: 1 0 auto;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.social-menu ul li {
+    cursor: pointer;
+}
+
+.social-menu a::before {
+    font-family: "Font Awesome 5 Brands";
+}
+
+.social-menu a[href*='facebook']::before {
+    content: "\f39e";
+}
+
+.social-menu a[href*='twitter']::before {
+    content: "\f099";
+}
+
+.social-menu a[href*='youtube']::before {
+    content: "\f431";
+}
+
+.social-menu a[href*='instagram']::before {
+    content: "\f16d";
+}
+
+.social-menu a[href*='pinterest']::before {
+    content: "\f231";
+}
+
+.navigation-social-dropdown-1 {
+    display: flex;
+    justify-content: space-between;
+    background-color: #3F51B5;
+}
+
+.navigation-social-dropdown-1 .dropdown {
+    flex: 0 0 90%;
+}
+
+.navigation-social-dropdown-1 .dropdown ul li {
+    flex: 1 0 auto;
+}
+
+.navigation-social-dropdown-1 .dropdown ul li ul li {
+    flex: 1 0 100%;
+}
+
+.navigation-social-dropdown-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3F51B5;
+}
+
+.navigation-social-dropdown-2 .dropdown ul li {
+    flex: 1 0 auto;
+}
+
+.navigation-social-dropdown-2 .dropdown {
+    flex: 0 0 100%;
+}
+
+.navigation-social-dropdown-2 .social-menu {
+    order: -1;
+    flex: 0 0 100%;
+}
+
+.navigation-social-dropdown-2 .social-menu ul {
+    justify-content: center;
+}
+
+@media (min-width: 480px) {
+
+    .icons ul li {
+        flex: 0 0 50%;
+    }
+
+}
+
+@media (min-width: 768px) {
+    
+    .simple ul {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .simple ul li {
+        margin-bottom: 0;
+    }
+
+    .icons ul li {
+        flex: 0 0 25%;
+    }
+
+    .dropdown ul {
+        flex-direction: row;
+    }
+
+    .dropdown ul li {
+        position: relative;
+        flex: 1 1 100%;
+    }
+
+    .dropdown ul li ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0%;
+    }
+
+    .dropdown ul li:hover ul {
+        margin-top: 0;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #ff5e62;
+    }
+
+    .navigation-social-dropdown-2 .dropdown ul li {
+        flex: 1 0 auto;
+    }
+
+    .navigation-social-dropdown-2 .dropdown {
+        flex: 1 0 auto;
+    }
+
+    .navigation-social-dropdown-2 .social-menu {
+        order: unset;
+        flex: 1 0 auto;
+    }
+
+    .navigation-social-dropdown-2 .social-menu ul {
+        justify-content: flex-end;
+    }
+
+}

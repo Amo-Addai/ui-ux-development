@@ -1,0 +1,142 @@
+
+:root {
+    --mainFont: 'Lora', senrif; /* Arial, Helvetica, sans-serif; */
+    --primary: #05bae6;
+    --secondary: #db008d;
+    --gray: #e5e5e5;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--mainFont);
+    font-size: 1.2rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    line-height: 2;
+}
+
+.site-header {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.site-header img {
+    max-width: 80%;
+}
+
+.main-navigation {
+    padding: 1rem 0;
+    background-color: var(--primary);
+}
+
+.main-navigation ul {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.main-navigation ul li {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.main-navigation ul li a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+.main-navigation ul li:last-of-type {
+    margin-bottom: 0;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sidebar {
+    padding: 2rem;
+    background-color: var(--gray);
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin-bottom: .8rem;
+}
+
+.sidebar ul li:last-of-type {
+    margin-bottom: 0;
+}
+
+.sidebar a {
+    color: var(--black);
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    color: var(--secondary);
+}
+
+.sidebar, .main-content {
+    flex: 0 0 100%;
+}
+
+.main-content {
+    padding: 2rem;
+}
+
+.site-footer {
+    background-color: var(--secondary);
+}
+
+.site-footer p {
+    margin: 0;
+    padding: 1rem 0;
+    color: var(--white);
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+
+    .main-navigation ul {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .main-navigation ul li {
+        margin-bottom: 0;
+    }
+
+    .sidebar {
+        flex: 0 0 30%;
+        order: -1; /* sidebar elem comes after main-content (on purpose) so reverse order */
+        /* on a smaller media-screen, with flex-column, 'sidebar' is below main-content */
+    }
+
+    .main-content {
+        flex: 0 0 70%;
+    }
+    
+}
